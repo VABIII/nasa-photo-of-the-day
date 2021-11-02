@@ -1,22 +1,16 @@
 import React, {useState} from "react";
 
+
 export default function Search(props) {
-    const {setData, call} = props;
-    const [search, setSearch] = useState("");
-
-    const onChange = evt => {
-        console.log(evt.target.value)
-        setSearch(evt.target.value)
-
-    }
-
-
+ const {onSubmit, onChange} = props;
 
     return (
-        <div>
-            Search:&nbsp;&nbsp;
-            <input type="date" onChange={onChange} />
-
+        <div>   <form>
+                    Search:&nbsp;&nbsp;
+                    <input type="date" onChange={onChange}  />
+                    {/*<input type="form"/>*/}
+                    <button formAction="submit" onClick={onSubmit}>Search</button>
+                </form>
         </div>
     )
 
