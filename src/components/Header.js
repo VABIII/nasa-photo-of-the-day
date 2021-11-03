@@ -10,7 +10,6 @@ const Styled_div = styled.div`
     
 `
 const Styled_h1 = styled.h1`
-  border: 1px red solid;
 
 `
 const Styled_div_2 = styled.div`
@@ -18,7 +17,6 @@ const Styled_div_2 = styled.div`
   color: lightgray;
   display: flex;
   justify-content: center ;
-  border: 1px red solid;
 `
 
 

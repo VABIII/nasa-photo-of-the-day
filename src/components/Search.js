@@ -17,7 +17,11 @@ const Styled_button = styled.button`
 `
 
 const Styled_input = styled.input`
-  color: darkslategrey;  
+  color: lightgray;  
+  background-color: darkslategrey;
+  //border: none;
+  
+  
 `
 const Styled_form = styled.form`
   padding: 15% 0 5%;
@@ -27,7 +31,7 @@ const Styled_form = styled.form`
 
 export default function Search(props) {
  const {onSubmit, onChange} = props;
-    console.log(Styled_input)
+
     return (
         <div>
             <Styled_form>

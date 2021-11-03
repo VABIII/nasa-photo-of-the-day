@@ -7,11 +7,11 @@ const Styled_div = styled.div`
     
 `
 
-const Styled_button = styled.button`
-  background-color: transparent;
+const Styled_div_2 = styled.div`
   color: lightgray;
-  border: none;
   font-weight: bold;
+  
+  
   
 `
 
@@ -22,7 +22,7 @@ export default function ToggledInfo(props) {
     return(
         <Styled_div>
             <h3>
-                <Styled_button onClick={toggleInfo}>{data.title}</Styled_button>
+                <Styled_div_2 onClick={toggleInfo}>{data.title}</Styled_div_2>
             </h3>
             <p>{data.explanation}</p>
         </Styled_div>
