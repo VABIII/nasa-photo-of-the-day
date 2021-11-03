@@ -3,18 +3,13 @@ import styled from "styled-components";
 
 const Styled_div = styled.div`
   background-color: darkslategrey;
-  color: lightgray;
-    
+  color: lightgray;    
 `
 
 const Styled_div_2 = styled.div`
   color: lightgray;
-  font-weight: bold;
-  
-  
-  
+  font-weight: bold; 
 `
-
 
 export default function ToggledInfo(props) {
     const {data, toggleInfo} = props;

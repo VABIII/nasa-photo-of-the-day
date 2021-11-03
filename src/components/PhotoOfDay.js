@@ -7,12 +7,12 @@ export default function PhotoOfDay(props) {
     const Styled_div = styled.div`
       background-color: darkslategrey;
       color: lightgray;
-      
+      max-width: 100%;
+      padding: 2% 0 2%;
     `
-const Styled_img = styled.img`
-  width: 40%;
-
-`
+    const Styled_img = styled.img`
+      width: 40%;
+    `
 
     return(
         <Styled_div>

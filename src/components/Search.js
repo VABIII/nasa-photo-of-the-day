@@ -6,8 +6,7 @@ const Styled_button = styled.button`
   color: lightgray;
   border: none;
   font-weight: bold;
-  font-size: 1.25rem;
-  
+  font-size: 1.25rem;  
   
   &:hover {
     font-size: 1.5rem;
@@ -18,15 +17,11 @@ const Styled_button = styled.button`
 
 const Styled_input = styled.input`
   color: lightgray;  
-  background-color: darkslategrey;
-  //border: none;
-  
-  
+  background-color: darkslategrey;  
 `
+
 const Styled_form = styled.form`
   padding: 15% 0 5%;
-  display: flex;
-  align-items: flex-end;
 `
 
 export default function Search(props) {
@@ -40,8 +35,6 @@ export default function Search(props) {
             </Styled_form>
         </div>
     )
-
-
 }
 
 
