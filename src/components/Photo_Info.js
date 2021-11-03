@@ -1,6 +1,19 @@
 import React, {useState} from "react";
-import ToggledInfOff from "./ToggledInffOff";
 import ToggledInfo from "./ToggledInfo";
+import styled from "styled-components";
+
+const Styled_div = styled.div`
+  background-color: darkslategrey;
+  color: lightgray;
+
+`
+
+const Styled_button = styled.button`
+  background-color: transparent;
+  color: lightgray;
+  border: none;
+  font-weight: bold;  
+`
 
 export default function Photo_Info(props) {
     const [isToggled, setIsToggled] = useState(true);
@@ -11,14 +24,12 @@ export default function Photo_Info(props) {
     };
 
     return(
-        <div>
+        <Styled_div>
             {
-               isToggled ? <button onClick={toggleInfo}>{data.title}</button> : <ToggledInfo data={data} toggleInfo={toggleInfo} />
+               isToggled ? <Styled_button onClick={toggleInfo}>{data.title}</Styled_button> :
+                   <ToggledInfo data={data} toggleInfo={toggleInfo} />
             }
-            {/*<ToggledInfOff data={data}/>*/}
-
-
-        </div>
+        </Styled_div>
     )
 }
 
