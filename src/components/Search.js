@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import styled from "styled-components";
 
 const Styled_button = styled.button`
@@ -6,7 +6,7 @@ const Styled_button = styled.button`
   color: lightgray;
   border: none;
   font-weight: bold;
-  font-size: 1.25rem;  
+  font-size: 1.25rem;
   
   &:hover {
     font-size: 1.5rem;
@@ -30,7 +30,7 @@ export default function Search(props) {
     return (
         <div>
             <Styled_form>
-                <Styled_button formAction="submit" onClick={onSubmit}>Search:&nbsp;</Styled_button>
+                <Styled_button type="primary" formAction="submit" onClick={onSubmit}>Search:&nbsp;</Styled_button>
                 <Styled_input  type="date" onChange={onChange}  />
             </Styled_form>
         </div>

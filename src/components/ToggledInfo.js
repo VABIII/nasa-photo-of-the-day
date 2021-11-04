@@ -22,7 +22,6 @@ export default function ToggledInfo(props) {
             <p>{data.explanation}</p>
         </Styled_div>
     )
-
 }
 
 

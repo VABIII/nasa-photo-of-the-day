@@ -18,8 +18,7 @@ const Styled_a = styled.a`
     color: grey;
     font-size: 1.15rem;
     transition: font-size 1s;
-    transition-timing-function: ease-out;
-    
+    transition-timing-function: ease-out;    
   }  
 `
 
