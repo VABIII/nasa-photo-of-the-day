@@ -21,12 +21,12 @@ const Styled_h1 = styled.h1`
 `
 
 export default function Header(props) {
-    const {onSubmit, onChange, data} = props;
+    const { initialValues, onSubmit, onChange, data} = props;
 
     return(
         <Styled_Div_3>
             <Styled_div>
-                <Search onSubmit={onSubmit} onChange={onChange} />
+                <Search initialValues={initialValues} onSubmit={onSubmit} onChange={onChange} />
             </Styled_div>
             <Styled_div_2>
                 <Styled_h1>{data.date}</Styled_h1>

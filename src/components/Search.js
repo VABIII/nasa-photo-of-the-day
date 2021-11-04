@@ -25,13 +25,13 @@ const Styled_form = styled.form`
 `
 
 export default function Search(props) {
- const {onSubmit, onChange} = props;
+ const {initialValues, onSubmit, onChange} = props;
 
     return (
         <div>
             <Styled_form>
                 <Styled_button type="primary" formAction="submit" onClick={onSubmit}>Search:&nbsp;</Styled_button>
-                <Styled_input  type="date" onChange={onChange}  />
+                <Styled_input  type="date" max={initialValues} onChange={onChange}  />
             </Styled_form>
         </div>
     )

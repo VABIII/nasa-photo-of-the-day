@@ -55,7 +55,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header data={data} onSubmit={onSubmit} onChange={onChange} />
+      <Header initialValues={initialValues} data={data} onSubmit={onSubmit} onChange={onChange} />
         <PhotoOfDay data={data}/>
         <Photo_Info data={data} />
         <Footer data={data}/>
